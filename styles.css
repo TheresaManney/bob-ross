@@ -1,3 +1,11 @@
+/*Floats: https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/13-layout-floats.md*/
+
+/*float will make the page flow so that it gets rid of white space
+- float and clear are friends...you almost never see them apart from eachother*/
+img {
+  float: left;
+  clear: both;
+}
 /* All images should be short */
 img {
   height: 300px;
