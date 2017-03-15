@@ -1,5 +1,18 @@
 /*Floats: https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/13-layout-floats.md*/
 
+/*Positioning: https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/14-layout-positioning.md*/
+
+header {
+  position: fixed; /*allows the header to stay fixed when we scroll*/
+  width: 100%; /*makes header look like a banner accross the top of the page*/
+  top: 0px; /*bumps header up to the top..no more white space at the very top of the website*/
+  left: 0px;
+}
+
+main {
+  margin-top: 160px; /*makes the "Inspiring Bob Ross Quotes" come down from behind the header so we can now see it!...deciding how many pixles to use is a trile and error thing, not as scientific as Kari would like*/
+}
+
 /*float will make the page flow so that it gets rid of white space
 - float and clear are friends...you almost never see them apart from eachother*/
 img {
@@ -8,7 +21,27 @@ img {
 }
 
 article {
-  clear: both; 
+  /*clearing before and after each article, this way... the images corresponding with each article match up correctly with eachother */
+  /*clear: both;*/
+}
+
+/*
+Adjust to make it look more like an article (like from a news paper)
+-
+*/
+article:nth-of-type(odd){
+  float: left;
+  max-width: 75%;
+}
+
+article:nth-of-type(even){
+  float: right;
+  max-width: 25%;
+}
+
+/*footer needs to be cleared to prevent the footer to float!*/
+footer {
+  clear: both;
 }
 /* All images should be short */
 img {
