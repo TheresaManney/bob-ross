@@ -6,6 +6,10 @@ img {
   float: left;
   clear: both;
 }
+
+article {
+  clear: both; 
+}
 /* All images should be short */
 img {
   height: 300px;
