@@ -10,7 +10,7 @@ header {
 }
 
 main {
-  margin-top: 160px; /*makes the "Inspiring Bob Ross Quotes" come down from behind the header so we can now see it!...deciding how many pixles to use is a trile and error thing, not as scientific as Kari would like*/
+  margin-top: 160px; /*makes the "Inspiring Bob Ross Quotes" come down from behind the header so we can now see it!...deciding how many pixles to use is a trial and error thing, not as scientific as Kari would like*/
 }
 
 /*float will make the page flow so that it gets rid of white space
